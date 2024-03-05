@@ -1,0 +1,19 @@
+{
+  "name": "lr3-discord-bot",
+  "version": "1.0.0",
+  "description": "some bot for the lr3 discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "LR3-Discord-Bot"
+  },
+  "author": "VoidScientist, Raphraphra",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "type": "module"
+}
