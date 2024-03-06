@@ -7,7 +7,8 @@ const TYPING_EVENT_TRIGGER_TIME = 8;
 
 const client = new Client( { intents: ["Guilds", "GuildMessages", "GuildMessageTyping", "MessageContent"] } );
 
-let typingUsers = {}
+let typingUsers = {};
+let self = -1;
 
 client.login(CONFIG.token)
 
@@ -27,6 +28,8 @@ function onTyping(typing) {
     console.log(text);
 }
 
+
+
 function typingEnd(message) {
     const author = message.author;
     const start = typingUsers[author.id];
@@ -34,7 +37,7 @@ function typingEnd(message) {
     const duration = (end-start)/1000;
 
     const userName = author.displayName;
-    message.reply(`It took you around ${duration + TYPING_OFFSET} seconds to write this !`);
+    message.reply(`It took you around ${duration + TYPING_OFFSET} seconds to write your disgusting opnion, you could've touched grass instead !!!`);
 
 }
 
